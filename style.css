@@ -5,6 +5,7 @@
   --txt-m: 0.9375rem;
   --txt-litter-spacing: 0.1em;
   --txt-line-hgiht: 1.5;
+  --font-main: "Poppins", sans-serif;
   /* heading font sizes and litter spacing */
   --h1: calc(var(--h2) * var(--heading-multiplier));
   --h2: calc(var(--h3) * var(--heading-multiplier));
@@ -20,20 +21,93 @@
   --gap-l: calc(var(--gap-m) * var(--spacing-multiplier));
   /* colors */
 
- --clr-red: hsl(0, 78%, 62%);
---clr-cyan: hsl(180, 62%, 55%);
---clr-orange: hsl(34, 97%, 64%);
---clr-blue: hsl(212, 86%, 64%);
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
 
---clr-grey-500: hsl(234, 12%, 34%);
---clr-grey-400: hsl(212, 6%, 44%);
---clr-white: hsl(0, 0%, 100%);
-
+  --clr-grey-500: hsl(234, 12%, 34%);
+  --clr-grey-400: hsl(212, 6%, 44%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: poppins;
+  src: url("assets/poppins-font/Poppins-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: poppins;
+  src: url("assets/poppins-font/Poppins-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: poppins;
+  src: url("assets/poppins-font/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: poppins;
+  src: url("assets/poppins-font/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("assets/poppins-font/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+dl,
+dt,
+dd {
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: poppins, Arial, sans-serif;
+  font-size: var(--txt-m);
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 100%;
+  }
+}
+section {
+  padding-inline: var(--gutter);
 }
 .container {
   max-inline-size: 90rem;
   margin-inline: auto;
   margin-block: auto;
+  box-sizing: border-box;
 }
 
 .attribution {
