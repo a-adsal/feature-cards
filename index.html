@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <main>
+      <section class="feature">
+        <div class="container">
+          <div class="title__wrapper">
+            <h1 class="title">Powered by Technology</h1>
+            <p class="lead">Reliable, efficient delivery</p>
+          </div>
+          <p>
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+          <dl class="feature__cards">
+            <div class="card__wrapper">
+              <dt class="card__title">Supervisor</dt>
+              <dd class="card__body-txt">
+                Monitors activity to identify project roadblocks
+              </dd>
+              <img src="images/icon-supervisor.svg" alt="supervisor icon">
+            </div>
+            <div class="card__wrapper">
+              <dt class="card__title">Team Builder</dt>
+              <dd class="card__body-txt">
+                Scans our talent network to create the optimal team for your
+                project
+              </dd>
+              <img src="images/icon-team-builder.svg" alt="team builder icon">
+            </div>
+            <div class="card__wrapper">
+              <dt class="card__title">Karma</dt>
+              <dd class="card__body-txt">
+                Regularly evaluates our talent to ensure quality
+              </dd>
+              <img src="images/icon-karma.svg" alt="karma icon">
+            </div>
+            <div class="card__wrapper">
+              <dt class="card__title">Calculator</dt>
+              <dd class="card__body-txt">
+                Uses data from past projects to provide better delivery
+                estimates
+              </dd>
+              <img src="images/icon-calculator.svg" alt="calculator icon">
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

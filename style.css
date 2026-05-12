@@ -1,0 +1,45 @@
+:root {
+  /* txt-s for card text */
+  --txt-s: 0.8125rem;
+  /* txt-m for the title section body text */
+  --txt-m: 0.9375rem;
+  --txt-litter-spacing: 0.1em;
+  --txt-line-hgiht: 1.5;
+  /* heading font sizes and litter spacing */
+  --h1: calc(var(--h2) * var(--heading-multiplier));
+  --h2: calc(var(--h3) * var(--heading-multiplier));
+  --h3: calc(var(--h4) * var(--heading-multiplier));
+  --h4: clamp(0.896rem, calc(0.3365vw + 0.8171rem), 1.12rem);
+  --heading-multiplier: 1.25;
+  --hedding-litter-spacing: clamp(-0.1em, calc(0.3099vw + -0.0789rem), 0.2em);
+  /* spacing */
+  --spacing-multiplier: 1.8;
+  --gutter: clamp(2rem, calc(3.0047vw + 1.2958rem), 4rem);
+  --gap-s: calc(var(--gap-m) / var(--spacing-multiplier));
+  --gap-m: clamp(1.875rem, calc(0.5634vw + 1.743rem), 2.25rem);
+  --gap-l: calc(var(--gap-m) * var(--spacing-multiplier));
+  /* colors */
+
+ --clr-red: hsl(0, 78%, 62%);
+--clr-cyan: hsl(180, 62%, 55%);
+--clr-orange: hsl(34, 97%, 64%);
+--clr-blue: hsl(212, 86%, 64%);
+
+--clr-grey-500: hsl(234, 12%, 34%);
+--clr-grey-400: hsl(212, 6%, 44%);
+--clr-white: hsl(0, 0%, 100%);
+
+}
+.container {
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  margin-block: auto;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
