@@ -110,7 +110,7 @@ Google AI for basic Q&A about why and when I should use logical properties and p
 
 ## Author
 
-- github - [Add your name here](https://github.com/a-adsal)
+- github - [Adsal](https://github.com/a-adsal)
 - Frontend Mentor - [@a-adsal](https://www.frontendmentor.io/profile/a-adsal)
 - I don't have social media and never will :)
 
