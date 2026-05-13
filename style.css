@@ -27,9 +27,7 @@
   --radius-m: 0.5em;
 }
 
-/* ==================
-   4. colors
-   ================== */
+/* colors */
 :root {
   --clr-red: hsl(0, 78%, 62%);
   --clr-cyan: hsl(180, 62%, 55%);
@@ -76,6 +74,10 @@ dl,
 img {
   margin: 0;
   padding: 0;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
 }
 h1,
 h2,
@@ -191,6 +193,11 @@ footer {
   box-shadow: 0 0 1.7em -1em var(--clr-grey-400);
   border-top: 0.3em solid;
   border-radius: var(--radius-m);
+  & > dd {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+  }
   img {
     max-inline-size: clamp(3rem, calc(1.5023vw + 2.6479rem), 4rem);
     align-self: end;
@@ -200,10 +207,6 @@ footer {
   }
 }
 
-img {
-  display: block;
-  max-inline-size: 100%;
-}
 .calculator__card {
   border-color: var(--clr-blue);
 }
